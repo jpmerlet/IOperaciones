@@ -1,0 +1,15 @@
+
+SYNTAX ERROR, MESSAGE(S) FROM PARSER:
+
+Probability function must end in _lpdf or _lpmf. Found distribution family = Dirichlet with no corresponding probability function Dirichlet_lpdf, Dirichlet_lpmf, or Dirichlet_log
+  error in '/Users/juanpablodonosomerlet/Desktop/IOperaciones/Tareas/Tarea2/notebook/tmp/posterior_model.stan' at line 10, column 26
+  -------------------------------------------------
+     8: }
+     9: model{
+    10:     p ~ Dirichlet(alpha);
+                                 ^
+    11:     q ~ Multinomial(N,p); 
+  -------------------------------------------------
+
+
+make: *** [/Users/juanpablodonosomerlet/Desktop/IOperaciones/Tareas/Tarea2/notebook/tmp/posterior_model.hpp] Error 253
