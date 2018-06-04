@@ -17,8 +17,8 @@ static int current_statement_begin__;
 
 stan::io::program_reader prog_reader__() {
     stan::io::program_reader reader;
-    reader.add_event(0, 0, "start", "/Users/juanpablodonosomerlet/Desktop/IOperaciones/Tareas/Tarea2/tmp/posterior_model.stan");
-    reader.add_event(12, 12, "end", "/Users/juanpablodonosomerlet/Desktop/IOperaciones/Tareas/Tarea2/tmp/posterior_model.stan");
+    reader.add_event(0, 0, "start", "/Users/juanpablodonosomerlet/Desktop/IOperaciones/Tareas/Tarea2/notebook/tmp/posterior_model.stan");
+    reader.add_event(12, 12, "end", "/Users/juanpablodonosomerlet/Desktop/IOperaciones/Tareas/Tarea2/notebook/tmp/posterior_model.stan");
     return reader;
 }
 

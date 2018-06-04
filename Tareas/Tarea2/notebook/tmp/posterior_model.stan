@@ -1,12 +1,12 @@
 data{
     int<lower=0> N;
-    int<lower=0,upper=N> q[N];
-    int<lower=0,upper=1> alpha[7];
+    int <lower=0,upper=N> q[7];
+    vector[7] alpha;
 }
 parameters{
-    real <lower=0,upper=1> p[7];
+    simplex[7] p;
 }
 model{
-    p ~ Dirichlet(alpha);
-    q ~ Multinomial(N,p); 
+    p ~ dirichlet(alpha);
+    q ~ multinomial(p); 
 }
